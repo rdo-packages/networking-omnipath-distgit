@@ -1,0 +1,113 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d3f03f6c_ad2feefe",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 36
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-20T04:33:39Z",
+      "side": 1,
+      "message": "python%{pyver}",
+      "range": {
+        "startLine": 45,
+        "startChar": 16,
+        "endLine": 45,
+        "endChar": 22
+      },
+      "revId": "27622ef8db7ee0fa05539c3ce4c57669fe0fde22",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9c517be9_7cb1b8f2",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 36
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-20T04:33:39Z",
+      "side": 1,
+      "message": "We don\u0027t have 1.3.11 in RDO yet, try following for now:- python%{pyver}-sqllchemy \u003e\u003d 1.2.17",
+      "range": {
+        "startLine": 54,
+        "startChar": 16,
+        "endLine": 54,
+        "endChar": 53
+      },
+      "revId": "27622ef8db7ee0fa05539c3ce4c57669fe0fde22",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "51a4b058_cc0d2eaf",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 36
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-20T04:33:39Z",
+      "side": 1,
+      "message": "python%{pyver}",
+      "range": {
+        "startLine": 55,
+        "startChar": 16,
+        "endLine": 55,
+        "endChar": 22
+      },
+      "revId": "27622ef8db7ee0fa05539c3ce4c57669fe0fde22",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c49991fa_5fe912c4",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 36
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-20T04:33:39Z",
+      "side": 1,
+      "message": "python%{pyver}",
+      "range": {
+        "startLine": 56,
+        "startChar": 16,
+        "endLine": 56,
+        "endChar": 22
+      },
+      "revId": "27622ef8db7ee0fa05539c3ce4c57669fe0fde22",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d14ba265_d2983db5",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 36
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-20T04:33:39Z",
+      "side": 1,
+      "message": "why comment? facing some issues with tests and docs? let us know on #rdo freenode we can help u out.",
+      "revId": "27622ef8db7ee0fa05539c3ce4c57669fe0fde22",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
