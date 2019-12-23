@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2f179f0f_4f324d59",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 38
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-23T04:46:23Z",
+      "side": 1,
+      "message": "sqlalchemy",
+      "range": {
+        "startLine": 54,
+        "startChar": 31,
+        "endLine": 54,
+        "endChar": 40
+      },
+      "revId": "ee9dd26ce53ab79631e486c3314ae624f4231db9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "466a4eb4_f5534305",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 38
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-23T04:46:23Z",
+      "side": 1,
+      "message": "hacking tests need not run while packaging, remove it.",
+      "range": {
+        "startLine": 75,
+        "startChar": 0,
+        "endLine": 75,
+        "endChar": 37
+      },
+      "revId": "ee9dd26ce53ab79631e486c3314ae624f4231db9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a132ba22_c7d9f6bb",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 38
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-23T04:46:23Z",
+      "side": 1,
+      "message": "remove it, flake8 tests need not run during packaging.",
+      "range": {
+        "startLine": 77,
+        "startChar": 0,
+        "endLine": 77,
+        "endChar": 49
+      },
+      "revId": "ee9dd26ce53ab79631e486c3314ae624f4231db9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e5720a7a_4117f3e4",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 38
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-23T04:46:23Z",
+      "side": 1,
+      "message": "not needed, remove it.",
+      "range": {
+        "startLine": 81,
+        "startChar": 0,
+        "endLine": 81,
+        "endChar": 34
+      },
+      "revId": "ee9dd26ce53ab79631e486c3314ae624f4231db9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "312a3f8d_fc3bbd53",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 38
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-23T04:46:23Z",
+      "side": 1,
+      "message": "lint tests not to be run during packaging, remove it.",
+      "range": {
+        "startLine": 84,
+        "startChar": 0,
+        "endLine": 88,
+        "endChar": 6
+      },
+      "revId": "ee9dd26ce53ab79631e486c3314ae624f4231db9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d71f0cd6_0fcfac98",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 38
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-23T04:46:23Z",
+      "side": 1,
+      "message": "replace this with following:-\n%if %{pyver} \u003d\u003d 2\nBuildRequires: python-webtest\n%else\nBuildRequires: python%{pyver}-webtest\n%endif",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 37
+      },
+      "revId": "ee9dd26ce53ab79631e486c3314ae624f4231db9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c1af36a1_a36de9d1",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 38
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2019-12-23T04:46:23Z",
+      "side": 1,
+      "message": "releasenotes not build while packaging, remove it.",
+      "range": {
+        "startLine": 93,
+        "startChar": 0,
+        "endLine": 93,
+        "endChar": 43
+      },
+      "revId": "ee9dd26ce53ab79631e486c3314ae624f4231db9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
