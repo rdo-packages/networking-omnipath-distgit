@@ -1,0 +1,199 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1ee06f68_244ff851",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-01-06T10:04:54Z",
+      "side": 1,
+      "message": "networking-omnipath\n\nwithout this package is being named as python-omnipath",
+      "range": {
+        "startLine": 14,
+        "startChar": 14,
+        "endLine": 14,
+        "endChar": 22
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ebdb06a8_35b33b2d",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-01-06T10:04:54Z",
+      "side": 1,
+      "message": "Add BuildRequires git as git is used in %prep",
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "73983db5_192e4701",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-01-06T10:04:54Z",
+      "side": 1,
+      "message": "what needs these? i didn\u0027t find the usage in networking-omnipath.",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 51
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "23736239_755baae6",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-01-06T10:04:54Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 45
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e777d16e_ffaee2ac",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-01-06T10:04:54Z",
+      "side": 1,
+      "message": "not needed, duplicated from Line 39-47",
+      "range": {
+        "startLine": 71,
+        "startChar": 0,
+        "endLine": 73,
+        "endChar": 46
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f2a2f072_52761dbd",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-01-06T10:04:54Z",
+      "side": 1,
+      "message": "%{sname}",
+      "range": {
+        "startLine": 114,
+        "startChar": 14,
+        "endLine": 114,
+        "endChar": 33
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f73155b4_e6f9ee32",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-01-06T10:04:54Z",
+      "side": 1,
+      "message": "use sphinx-build-%{pyver} -W -b html doc/source doc/build/html to be same as upstream https://opendev.org/x/networking-omnipath/src/branch/master/tox.ini#L81",
+      "range": {
+        "startLine": 125,
+        "startChar": 0,
+        "endLine": 125,
+        "endChar": 34
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "752f360f_74aa48da",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-01-06T10:04:54Z",
+      "side": 1,
+      "message": "are u planning to fix tests as a followup?",
+      "range": {
+        "startLine": 134,
+        "startChar": 27,
+        "endLine": 134,
+        "endChar": 34
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "506980d4_2e27a29a",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-01-06T10:04:54Z",
+      "side": 1,
+      "message": "also add\n%doc doc/build/html",
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
