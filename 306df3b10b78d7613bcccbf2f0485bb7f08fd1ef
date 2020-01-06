@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "430e3e6d_a6ffe36d",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 661
+      },
+      "writtenOn": "2020-01-06T19:52:48Z",
+      "side": 1,
+      "message": "changed",
+      "parentUuid": "1ee06f68_244ff851",
+      "range": {
+        "startLine": 14,
+        "startChar": 14,
+        "endLine": 14,
+        "endChar": 22
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ebdb06a8_35b33b2d",
         "filename": "python-networking-omnipath.spec",
         "patchSetId": 42
@@ -42,6 +66,24 @@
     },
     {
       "key": {
+        "uuid": "e054091f_76cd77d8",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 661
+      },
+      "writtenOn": "2020-01-06T19:52:48Z",
+      "side": 1,
+      "message": "added",
+      "parentUuid": "ebdb06a8_35b33b2d",
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "73983db5_192e4701",
         "filename": "python-networking-omnipath.spec",
         "patchSetId": 42
@@ -53,6 +95,30 @@
       "writtenOn": "2020-01-06T10:04:54Z",
       "side": 1,
       "message": "what needs these? i didn\u0027t find the usage in networking-omnipath.",
+      "range": {
+        "startLine": 43,
+        "startChar": 0,
+        "endLine": 44,
+        "endChar": 51
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a00f4b58_87ed74e9",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 661
+      },
+      "writtenOn": "2020-01-06T19:52:48Z",
+      "side": 1,
+      "message": "removed",
+      "parentUuid": "73983db5_192e4701",
       "range": {
         "startLine": 43,
         "startChar": 0,
@@ -88,6 +154,30 @@
     },
     {
       "key": {
+        "uuid": "ca1db3be_ec2123a5",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 661
+      },
+      "writtenOn": "2020-01-06T19:52:48Z",
+      "side": 1,
+      "message": "removed",
+      "parentUuid": "23736239_755baae6",
+      "range": {
+        "startLine": 51,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 45
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e777d16e_ffaee2ac",
         "filename": "python-networking-omnipath.spec",
         "patchSetId": 42
@@ -99,6 +189,30 @@
       "writtenOn": "2020-01-06T10:04:54Z",
       "side": 1,
       "message": "not needed, duplicated from Line 39-47",
+      "range": {
+        "startLine": 71,
+        "startChar": 0,
+        "endLine": 73,
+        "endChar": 46
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fe1732f_c15addf5",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 661
+      },
+      "writtenOn": "2020-01-06T19:52:48Z",
+      "side": 1,
+      "message": "removed",
+      "parentUuid": "e777d16e_ffaee2ac",
       "range": {
         "startLine": 71,
         "startChar": 0,
@@ -134,6 +248,30 @@
     },
     {
       "key": {
+        "uuid": "87e3b8f9_490a8e42",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 661
+      },
+      "writtenOn": "2020-01-06T19:52:48Z",
+      "side": 1,
+      "message": "changed",
+      "parentUuid": "f2a2f072_52761dbd",
+      "range": {
+        "startLine": 114,
+        "startChar": 14,
+        "endLine": 114,
+        "endChar": 33
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f73155b4_e6f9ee32",
         "filename": "python-networking-omnipath.spec",
         "patchSetId": 42
@@ -145,6 +283,30 @@
       "writtenOn": "2020-01-06T10:04:54Z",
       "side": 1,
       "message": "use sphinx-build-%{pyver} -W -b html doc/source doc/build/html to be same as upstream https://opendev.org/x/networking-omnipath/src/branch/master/tox.ini#L81",
+      "range": {
+        "startLine": 125,
+        "startChar": 0,
+        "endLine": 125,
+        "endChar": 34
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "127bf412_cb140942",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 661
+      },
+      "writtenOn": "2020-01-06T19:52:48Z",
+      "side": 1,
+      "message": "changed",
+      "parentUuid": "f73155b4_e6f9ee32",
       "range": {
         "startLine": 125,
         "startChar": 0,
@@ -180,6 +342,30 @@
     },
     {
       "key": {
+        "uuid": "a2567eb5_a578a127",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 661
+      },
+      "writtenOn": "2020-01-06T19:52:48Z",
+      "side": 1,
+      "message": "removed || true",
+      "parentUuid": "752f360f_74aa48da",
+      "range": {
+        "startLine": 134,
+        "startChar": 27,
+        "endLine": 134,
+        "endChar": 34
+      },
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "506980d4_2e27a29a",
         "filename": "python-networking-omnipath.spec",
         "patchSetId": 42
@@ -191,6 +377,24 @@
       "writtenOn": "2020-01-06T10:04:54Z",
       "side": 1,
       "message": "also add\n%doc doc/build/html",
+      "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "129cba53_7f590ed0",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 42
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 661
+      },
+      "writtenOn": "2020-01-06T19:52:48Z",
+      "side": 1,
+      "message": "added",
+      "parentUuid": "506980d4_2e27a29a",
       "revId": "306df3b10b78d7613bcccbf2f0485bb7f08fd1ef",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
