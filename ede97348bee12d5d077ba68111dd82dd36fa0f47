@@ -42,6 +42,24 @@
     },
     {
       "key": {
+        "uuid": "34ac3459_491e26f5",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 47
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 207
+      },
+      "writtenOn": "2020-01-07T09:54:31Z",
+      "side": 1,
+      "message": "sorry, its not needed due release notes are not generated on packaging",
+      "parentUuid": "33d734ee_b953894d",
+      "revId": "ede97348bee12d5d077ba68111dd82dd36fa0f47",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "325884b7_506d04e8",
         "filename": "python-networking-omnipath.spec",
         "patchSetId": 47
