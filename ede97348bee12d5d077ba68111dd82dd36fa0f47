@@ -45,6 +45,30 @@
       "revId": "ede97348bee12d5d077ba68111dd82dd36fa0f47",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d1b5583b_c7a1a9a4",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 47
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 207
+      },
+      "writtenOn": "2020-01-07T08:56:12Z",
+      "side": 1,
+      "message": "Not required.\nThere are also other deps missing according to the file https://opendev.org/x/networking-omnipath/src/branch/master/test-requirements.txt",
+      "parentUuid": "325884b7_506d04e8",
+      "range": {
+        "startLine": 90,
+        "startChar": 0,
+        "endLine": 90,
+        "endChar": 39
+      },
+      "revId": "ede97348bee12d5d077ba68111dd82dd36fa0f47",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
