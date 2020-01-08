@@ -22,6 +22,30 @@
       "revId": "088971b9290b562b38fe00bf8e9d8984dd794dd9",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8d9dcb5b_86a807e8",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 48
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 661
+      },
+      "writtenOn": "2020-01-08T17:17:05Z",
+      "side": 1,
+      "message": "added python%{pyver}-neutron-tests for build requirement.\nWe are still investigating alembic error, but since the deadline is coming soon, can we proceed without checking test now?\n\nCan you tell me how to build them rpm locally?",
+      "parentUuid": "2be17681_f2611814",
+      "range": {
+        "startLine": 126,
+        "startChar": 1,
+        "endLine": 126,
+        "endChar": 34
+      },
+      "revId": "088971b9290b562b38fe00bf8e9d8984dd794dd9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
