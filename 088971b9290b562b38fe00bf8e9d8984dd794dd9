@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2be17681_f2611814",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 48
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2020-01-08T09:44:16Z",
+      "side": 1,
+      "message": "Please add some context on why unit test results are being ignored.\n\nLooking at the build outputs, it looks like we could add python%{pyver}-neutron-tests to the build requirements, which should fix the centos7 build issue. For centos8, I see a different error related to alembic, which might require  further investigation.",
+      "range": {
+        "startLine": 126,
+        "startChar": 1,
+        "endLine": 126,
+        "endChar": 34
+      },
+      "revId": "088971b9290b562b38fe00bf8e9d8984dd794dd9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
