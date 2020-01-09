@@ -46,6 +46,30 @@
       "revId": "088971b9290b562b38fe00bf8e9d8984dd794dd9",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d09763ce_7dcfef83",
+        "filename": "python-networking-omnipath.spec",
+        "patchSetId": 48
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2020-01-09T08:32:41Z",
+      "side": 1,
+      "message": "\u003e added python%{pyver}-neutron-tests for build requirement.\n \u003e We are still investigating alembic error, but since the deadline is\n \u003e coming soon, can we proceed without checking test now?\n \u003e \n\nYes, let\u0027s ignore unit test results for now. Please add a comment explaining the issue (something like \"#NOTE(xbzhang99): this is the reason...\" should be enough)\n\n \u003e Can you tell me how to build them rpm locally?\n\nThe easiest way is to use DLRN:\n\n1- # git clone https://github.com/softwarefactory-project/DLRN\n2- Follow the steps in https://github.com/softwarefactory-project/DLRN/blob/master/README.rst#setup and https://github.com/softwarefactory-project/DLRN/blob/master/README.rst#preparing to set up the pre-requisites and deploy in a local venv, you can ignore the httpd part.\n3- # mkdir data \u0026\u0026 pushd data\n4- # git clone https://github.com/rdo-packages/networking-omnipath-distgit networking_omnipath_distro \u0026\u0026 pushd networking_omnipath_distro\n5- # git fetch https://review.rdoproject.org/r/openstack/networking-omnipath-distgit refs/changes/79/24079/49 \u0026\u0026 git cherry-pick FETCH_HEAD\n6- # popd; popd\n7- # dlrn --package-name python-networking-omnipath --dev\n\nYou can then play around with the spec file and see the results of each build run.",
+      "parentUuid": "8d9dcb5b_86a807e8",
+      "range": {
+        "startLine": 126,
+        "startChar": 1,
+        "endLine": 126,
+        "endChar": 34
+      },
+      "revId": "088971b9290b562b38fe00bf8e9d8984dd794dd9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
