@@ -27,15 +27,12 @@ Summary:        %{summary}
 
 BuildRequires:  python3-devel
 BuildRequires:  git
-BuildRequires:  python3-jsonschema
 BuildRequires:  python3-pbr >= 2.0
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-oslo-config >= 5.2.0
 BuildRequires:  python3-oslo-log >= 3.36.0
 BuildRequires:  openstack-neutron >= 13.0.0.0b2
 
-Requires:       python3-jsonschema
-Requires:       python3-pbr >= 2.0
 
 #imported from requirements.txt, with some changes
 Requires:       python3-sqlalchemy >= 1.2.0
@@ -70,9 +67,6 @@ BuildRequires: python3-webtest
 BuildRequires: python3-testtools >= 2.2.0
 
 Requires: python3-%{sname} = %{version}-%{release}
-Requires: python3-jsonschema
-Requires: python3-pbr
-Requires: python3-setuptools
 Requires: openstack-neutron >= 13.0.0.0b2
 
 %description -n python3-%{sname}-tests
