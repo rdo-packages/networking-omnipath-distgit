@@ -26,7 +26,7 @@ Summary:        %{summary}
 %{?python_provide:%python_provide python3-%{sname}}
 
 BuildRequires:  python3-devel
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  python3-pbr >= 2.0
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-oslo-config >= 5.2.0
