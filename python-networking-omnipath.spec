@@ -36,6 +36,7 @@ BuildRequires:  openstack-neutron >= 13.0.0.0b2
 
 #imported from requirements.txt, with some changes
 Requires:       python3-sqlalchemy >= 1.2.0
+Requires:       python3-sqlalchemy < 1.4.0
 Requires:       python3-neutron-lib >= 1.25.0
 Requires:       python3-oslo-config >= 5.2.0
 Requires:       python3-paramiko >= 2.4.2
