@@ -1,5 +1,13 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
+# we are excluding some BRs from automatic generator
+%global excluded_brs doc8 bandit pre-commit hacking flake8-import-order
+
+# Exclude sphinx from BRs if docs are disabled
+%if ! 0%{?with_doc}
+%global excluded_brs %{excluded_brs} sphinx openstackdocstheme
+%endif
+
 %global sname networking-omnipath
 %global pyname omnipath
 
@@ -10,7 +18,7 @@ Version:        XXX
 Release:        XXX
 Summary:        Python library for Intel Omnipath ML2 driver.
 
-License:        ASL 2.0
+License:        Apache-2.0
 URL:            https://opendev.org/x/%{sname}.git
 Source0:        https://opendev.org/x/%{sname}/archive/master.tar.gz
 BuildArch:      noarch
@@ -23,27 +31,14 @@ corresponds to a virtual fabric on omnipath side.
 
 %package -n     python3-%{sname}
 Summary:        %{summary}
-%{?python_provide:%python_provide python3-%{sname}}
 
 BuildRequires:  python3-devel
+BuildRequires:  pyproject-rpm-macros
 BuildRequires:  git-core
-BuildRequires:  python3-pbr >= 2.0
-BuildRequires:  python3-setuptools
-BuildRequires:  python3-oslo-config >= 5.2.0
-BuildRequires:  python3-oslo-log >= 3.36.0
 BuildRequires:  openstack-neutron >= 13.0.0.0b2
 
 
-#imported from requirements.txt, with some changes
-Requires:       python3-sqlalchemy >= 1.2.0
-Requires:       python3-neutron-lib >= 1.25.0
-Requires:       python3-oslo-config >= 5.2.0
-Requires:       python3-paramiko >= 2.4.2
-Requires:       python3-six >= 1.10.0
-Requires:       python3-oslo-log >= 3.36.0
 Requires:       openstack-neutron >= 13.0.0.0b2
-Requires:       python3-alembic >= 0.8.10
-
 %description -n python3-%{sname}
 OpenStack networking-omnipath is a ML2 mechanism driver that integrates
 OpenStack Neutron API with Omnipath backend. It enables Omnipath switching
@@ -76,9 +71,6 @@ Tests for networking-omnipath
 %package -n python-%{sname}-doc
 Summary: networking-omnipath documentation
 
-BuildRequires: python3-sphinx > 1.6.7
-BuildRequires: python3-openstackdocstheme >= 1.11.0
-
 %description -n python-%{sname}-doc
 Documentation for networking-omnipath
 %endif
@@ -86,32 +78,52 @@ Documentation for networking-omnipath
 %prep
 %autosetup -n %{sname}-%{upstream_version} -S git
 
-# Let's handle dependencies ourseleves
-rm -f *requirements.txt
+
+sed -i /^[[:space:]]*-c{env:.*_CONSTRAINTS_FILE.*/d tox.ini
+sed -i "s/^deps = -c{env:.*_CONSTRAINTS_FILE.*/deps =/" tox.ini
+sed -i /^minversion.*/d tox.ini
+sed -i /^requires.*virtualenv.*/d tox.ini
+
+# Exclude some bad-known BRs
+for pkg in %{excluded_brs}; do
+  for reqfile in doc/requirements.txt test-requirements.txt; do
+    if [ -f $reqfile ]; then
+      sed -i /^${pkg}.*/d $reqfile
+    fi
+  done
+done
+
+# Automatic BR generation
+%generate_buildrequires
+%if 0%{?with_doc}
+  %pyproject_buildrequires -t -e %{default_toxenv},docs
+%else
+  %pyproject_buildrequires -t -e %{default_toxenv}
+%endif
 
 %build
 sed -i '/warning-is-error/d' setup.cfg
 
-%{py3_build}
+%pyproject_wheel
 
 %if 0%{?with_doc}
-sphinx-build-3 -W -b html doc/source doc/build/html
+%tox -e docs
 rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %install
-%{py3_install}
+%pyproject_install
 
 %check
 export PYTHON=%{__python3}
 #NOTE(xbzhang99): test has issues related to alembic, will fix them in the next release.
-%{__python3} setup.py test || true
+%tox -e %{default_toxenv}
 
 %files -n python3-%{sname}
 %license LICENSE
 %doc README.rst
 %{python3_sitelib}/%{pyname}
-%{python3_sitelib}/networking_%{pyname}-*.egg-info
+%{python3_sitelib}/networking_%{pyname}-*.dist-info
 %exclude %{python3_sitelib}/%{pyname}/tests
 
 %files -n python3-%{sname}-tests
