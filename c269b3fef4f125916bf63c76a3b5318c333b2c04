@@ -16,6 +16,23 @@
       "message": "I think we can remove this line [1] safely in order to make it work\n\n[1] https://opendev.org/x/networking-omnipath/src/branch/master/tox.ini#L80",
       "revId": "c269b3fef4f125916bf63c76a3b5318c333b2c04",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45888018_1bf5bebb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-07-12T13:54:47Z",
+      "side": 1,
+      "message": "this project is unmaintained: https://review.rdoproject.org/r/c/rdoinfo/+/49230",
+      "revId": "c269b3fef4f125916bf63c76a3b5318c333b2c04",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
